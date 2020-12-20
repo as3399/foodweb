@@ -1,0 +1,235 @@
+                                    /* CSS RESET */
+*{
+    margin:0;
+    padding: 0;
+}
+                                    /* Navigation Bar  */
+#navbar{
+    display: flex;
+    position: absolute;
+    /* we use position here because of z-index and it works only in custom position absolute relative and sticky  */
+    height: 55px;
+    width: 100%;
+    font-family: 'Lobster', cursive;
+}
+                                     /* List and logo  */
+
+#navbar ul{
+    display: flex;    
+}
+#navbar ul li { 
+    list-style: none;
+    font-size:  1.1rem;
+    align-items: center;
+
+}
+#navbar ul li a{
+    display: block; 
+    color:white;
+    text-decoration: none;
+    padding: 3px 9px;
+    border-radius: 14px;
+    margin: 3px 20px;
+   
+}
+
+#navbar ul li a:hover{
+    display: block; 
+    color: black;
+    background-color: white;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#logo img{  
+    width: 42px;
+    height: 34px;
+    position: relative;
+    top: 11px;
+    left: 10px;
+}
+
+                                        /* Home Section  */
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 408px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin-bottom: 15px; 
+    font-family: 'Lobster', cursive;
+}
+.home::before{
+    content: "";
+    background: url('/Food\ website\ images/food1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 408px;
+    width: 100%;
+    /* these are compulsary with absolute background image */
+    z-index: -2;
+    opacity: 0.9;
+}
+.home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.home p{
+    color: white;
+    text-align: center;
+    font-size: 1.11rem;
+
+}
+.btn{
+    margin: 20px;
+    margin-top: 40px;
+    padding: 3px 15px ;
+    font-size: 1.1rem;
+    color: white;
+    background-color: brown;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+                                    /* Footer         */
+footer{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    color: white;
+    background-color: black;
+
+
+
+}
+                                        /* Services section  */
+.services{
+    display: flex;
+    margin-top: 50px;
+    padding: 0px 10px;
+    font-family: 'Lobster', cursive;
+    /* border: 2px solid red; */
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin: 0px 3px;
+    padding: 5px 30px;
+    border-radius: 25px;
+    align-items: center;
+    background-color: #f5f4f4;
+}
+.box img{
+    padding: 8px;
+    width: 160px;
+    height: 120px;
+}
+.services p{
+    padding: 10px 0px;
+}
+#services-head h2{
+   padding-top: 20px;
+    margin-top: 30px;
+}
+
+                                     /* Utility classes */
+.h-primary{
+    font-family: 'Lobster', cursive;
+    
+    font-size: 2.6rem;
+    padding: 14px;
+    text-align: center;  
+    }
+                                      /* Client section  */
+
+
+.clients{ 
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 50px;
+    /* border: 2px solid red; */
+
+    
+}
+
+#client-section{
+    height: 300px;
+    margin-top: 50px;
+    /* border: 2px solid red; */
+}
+
+.clients img{
+    
+height: 70px;
+padding: 20px 50px;
+
+}
+/* of there us a flex box in a block box we can arrange it by using margins inside it */
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/Logos/3d-cube-blocks-background-download-19892547-videohive-free-hunterae-com-1.jpg) repeat-x ;
+    width: 100%;
+    z-index: -3;
+    height: 300px;  
+    opacity: 0.8;
+    /* border: 2px solid red;
+     */
+  
+}
+                                   /* CONTACT BOX  */
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    /* border: 2px solid red; */
+
+}
+.form-grp{
+    padding:6px 6px;
+    margin: 6px 3px;
+    /* border: 2px solid red; */
+
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 1rem;
+}
+#contact{
+    position: relative;
+    font-family: 'Lobster', cursive;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -4;
+    background: url(/Logos/contact.jpg) no-repeat center center/cover;
+    opacity: 0.8;
+    font-family: 'Lobster', cursive;
+    
+}
